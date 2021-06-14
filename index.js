@@ -1,12 +1,4 @@
-const express = require('express');
-const app = express();
 const processjsondata = require('./src/processdata');
-
-// app.get('/', function(req, res){
-//     res.send("Hello world!");
-//  });
-
-app.listen(8000);
 
 console.log("started");
 
@@ -14,8 +6,6 @@ const jsondata = [{"Gender": "Male", "HeightCm": 171, "WeightKg": 96 }, { "Gende
 85 }, { "Gender": "Male", "HeightCm": 180, "WeightKg": 77 }, { "Gender": "Female", "HeightCm": 166,
 "WeightKg": 62}, {"Gender": "Female", "HeightCm": 150, "WeightKg": 70}, {"Gender": "Female", 
 "HeightCm": 167, "WeightKg": 82}];
-
-// const jsondata = "";
 
 async function parsejsondata() {
     const returneddata = await processjsondata(jsondata);

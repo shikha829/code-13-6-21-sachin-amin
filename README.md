@@ -21,7 +21,6 @@ git was used to commit changes.
 "start": "nodemon",
 "build": "webpack ./index.js -o dist/main.js",
 "test": "jest",
-"git": "git add . && git commit -m 'hello' && git push"
 
 Run : npm start
 Build : npm run-script build
